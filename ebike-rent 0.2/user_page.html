@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="stuff/css/style.css">
+    <link rel="shortcut icon" type="stuff/image/png" href="stuff/img/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Rent Bike</title>
+</head>
+
+<body>
+    <!--Page1 Register-Login-->
+    <header id="reg_log-home" class="page1_1">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html"><img src="stuff/img/logo.png" alt="" class="main-nav__logo"> </a>
+                <ul class="main-nav__items">
+                  <li><a href="index.html" class="fas fa-house fa-2x"></a></li>
+                  <li><a href="index.html#index_first" class="fas fa-solid fa-circle-info fa-2x"></a></li>
+                  <li><a href="models.html#models" class="active fas fa-store fa-2x"></a></li>
+                  <li><a href="user_page.html" class=" fa-arrow-right-to-bracket fas fa-2x"></a></li>
+                </ul>
+            </nav>
+            <div class="wrapper">
+                <div class="title-text">
+                </div>
+                <div class="form-container">
+                  <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Sign up</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <form id ="loginForm" class="login">
+                      <div class="field">
+                        <input class="email_check" type="text" placeholder="Email Address" required>
+                      </div>
+                      <div class="field">
+                        <input class="password_check" type="password" placeholder="Password" required>
+                      </div>
+                      <div class="pass-link"><a href="#">Forgot password?</a></div>
+                      <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input class="login_btn" type="submit" value="Login"> <!--Login btn-->
+                      </div>
+                      <div class="signup-link">Not a member? <a href="">Sign up now</a></div>
+                    </form>
+                    <form class="signup">
+                      <div class="field">
+                        <input type="text" placeholder="Email Address" required>
+                      </div>
+                      <div class="field">
+                        <input type="password" placeholder="Password" required>
+                      </div>
+                      <div class="field">
+                        <input type="password" placeholder="Confirm password" required>
+                      </div>
+                      <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Sign up">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Page2 Rent E-bike-->
+    <header id="user_page" class="page2_1 hidden">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="user_user.html"><class="main-nav__logo"> </a>
+                <ul class="main-nav__items">
+                    <li><a href="index.html" class="fas fa-house fa-2x"></a></li>
+                    <li><a class=" fas fa-store fa-2x market_btn"></a></li>
+                </ul>
+            </nav>
+            <div class="user_rent_now hidden">
+                <button class="close-user_rent_now">&times;</button>
+                <div class="border-bottom"></div>
+                 <!--burada netfly dan recaptha eklenecek-->
+                    <div class="form-containerr">
+                        <h2>Rent Informations</h2>
+                        <div class="form_name form-group"><i class="fas fa-user"></i><input type="text" placeholder="Name"></div>
+                        <div class="form_age form-group"><i class="fas fa-calendar"></i><input type="number" placeholder="Age"></div>
+                        <div class="form_address form-group"><i class="fas fa-map-marker-alt"></i><input type="text" placeholder="Address"></div>
+                        <div class="form_phone form-group"><i class="fas fa-phone"></i><input type="text" placeholder="Phone"></div>
+                        <div class="form_id form-group"><i class="fas fa-id-card"></i><input type="text" placeholder="ID"></div>
+                        <div class="form_passportid form-group"><i class="fas fa-passport"></i><input type="text" placeholder="Passport ID"></div>
+                        <div class="form-group"><i class="fas fa-comment"></i><textarea placeholder="Enter Message"></textarea></div>
+                        <button class="btn btn_rentt">Rent</button>
+                    </div>
+                    <div class="form-container">
+                        <h2>Contact Us</h2>
+                        <form action="https://formspree.io/f/xgvwdnyn" method="POST">
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <label>Your Name:</label>
+                                <input type="name" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <label>Your Email:</label>
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-phone"></i>
+                                <label>Your Phone:</label>
+                                <input type="text" placeholder="Your Phone">
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-comment-dots"></i>
+                                <label>Your Message:</label>
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn_sendd">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+
+        </div>
+        <div class="header-content items_setting page2_2 hidden">
+            <p class="lead sc_titles"></p>
+            <section id="models" class="text-center py-2">
+                <div class="container">
+                    <h2 class="lead avbbike">Avaible Bikes</h2>
+                    <div class="items">                             
+                        <div class="item item1">
+                            <div class="item__image">
+                                <a href="stuff/img/bike1.png" data-lightbox="roadtrip"> <img src="stuff/img/bike1.png" alt=""></a>
+                            </div>
+                            <div class="item__text">
+                            <div class="item__text__wrap">
+                                <p class="item__text__category">DUOTTS C29</p>
+                                
+                                <h2 class="item__text__title"><i class="fas fa-regular fa-car-battery"></i> Dual battery <br><i class="fas fa-regular fa-shield-halved"></i> Hydraulic Brake <br><i class="fas fa-regular fa-bolt"></i> 750W <br><i class="fas fa-regular fa-route"></i> 80-100 KM <br> <i class="fas fa-regular fa-check-double"></i> 65Nm </h2>
+                                <a class="user_rent_btn btn-light animate__animated animate__swing my-2">Rent Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="item item2">
+                        <div class="item__image">
+                            <a href="stuff/img/bike2.png" data-lightbox="roadtrip"> <img src="stuff/img/bike2.png" alt=""></a>
+                        </div>
+                        <div class="item__text">
+                        <div class="item__text__wrap">
+                            <p class="item__text__category">ENGWE E26</p>
+                            <h2 class="item__text__title"><i class=" fas fa-regular fa-car-battery"></i> Single battery <br><i class="fas fa-regular fa-shield-halved"></i> Hydraulic Brake <br><i class="fas fa-regular fa-bolt"></i> 750W <br><i class="fas fa-regular fa-route"></i> 140 KM <br> <i class="fas fa-regular fa-check-double"></i> 70Nm</h2>
+                            <a class="btn-light animate__animated animate__swing my-2">Out Of Stock</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="item item3">
+                        <div class="item__image">
+                            <a href="stuff/img/bike3.png" data-lightbox="roadtrip"> <img src="stuff/img/bike3.png" alt=""></a>
+                        </div>
+                        <div class="item__text">
+                        <div class="item__text__wrap">
+                            <p class="item__text__category">DUOTTS N26</p>
+                            <h2 class="item__text__title"><i class="fas fa-regular fa-car-battery"></i> Single battery <br><i class="fas fa-regular fa-shield-halved"></i> Hydraulic Brake <br><i class="fas fa-regular fa-bolt"></i> 750W*2 <br><i class="fas fa-regular fa-route"></i> 100-120 KM <br> <i class="fas fa-regular fa-check-double"></i> 65Nm*2 </h2>
+                            <a class="user_rent_btn btn-light animate__animated animate__swing my-2">Pre-Order Now</a>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </header>
+</header>
+<section id="index_second" class="text-center page2_3 hidden">
+    <div class="container ">
+    </div>
+
+    <div class="profile">
+        <div>
+            <ul>
+                <li><i class="fas fa-regular fa-circle-check fa-3x"></i></li>
+                <li class="title">Customer Satisfaction</li>
+                <li class="number">%87</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><i class="fas fa-solid fa-person-biking fa-3x"></i></li>
+                <li class="title">Avaible Bikes</li>
+                <li class="number">7</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><i class="fas fa-regular fa-wrench fa-3x"></i></li>
+                <li class="title">Comfort</li>
+                <li><a class="Comfort_txt">Reliable and customizable bicycles</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><i class="fas fa-regular fa-envelope fa-3x"></i></li>
+                <li class="title">Support Team</li>
+                <li class="number">24/7</li>
+            </ul>
+        </div>
+    </div>
+</section>
+        <section id="contact-b" class="bg-primary py-4 page2_4 hidden">
+            <div class="container">
+                <div class="contact-info">
+                    <div>
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <h3>Email</h3>
+                        <p>canitezemirr@gmail.com</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-address-card fa-2x"></i>
+                        <h3>Address</h3>
+                        <p>Budapest Hungary</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>CopyRight &copy; 2025.All Right Reserved.</p>
+            
+            <div class="social">
+                <a href="https://github.com/cntzemir" target="_blank">
+                    <i class="fab fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/@emirrrrw" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/emircntz/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/emircntz" target="_blank">
+                    <i class="fab fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="stuff/js/user_page.js"></script>
+    <div class="overlay hidden"></div>
+</body>
+</html>
